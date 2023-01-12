@@ -58,7 +58,7 @@ const Box = () => {
         {
           data
           .filter((val)=> {
-            if(searchTerm == ""){
+            if(searchTerm === ""){
                return val;
             }
             else if((val.title.toLowerCase().includes(searchTerm.toLowerCase()))||(val.winner.toLowerCase().includes(searchTerm.toLowerCase()))||(val.looser.toLowerCase().includes(searchTerm.toLowerCase()))){
