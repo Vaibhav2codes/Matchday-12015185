@@ -61,7 +61,7 @@ const Box = () => {
             if(searchTerm === ""){
                return val;
             }
-            else if((val.title.toLowerCase().includes(searchTerm.toLowerCase()))||(val.winner.toLowerCase().includes(searchTerm.toLowerCase()))||(val.looser.toLowerCase().includes(searchTerm.toLowerCase()))){
+            if((val.title.toLowerCase().includes(searchTerm.toLowerCase()))||(val.winner.toLowerCase().includes(searchTerm.toLowerCase()))||(val.looser.toLowerCase().includes(searchTerm.toLowerCase()))){
                return val;
             }
           })
